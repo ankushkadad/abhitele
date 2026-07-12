@@ -33,7 +33,7 @@ TOKENS = []
 
 i = 1
 while True:
-    token = os.environ.get(str(i))
+    token = os.environ.get(f"BOT_{i}")
     if not token:
         break
     TOKENS.append(token.strip())
